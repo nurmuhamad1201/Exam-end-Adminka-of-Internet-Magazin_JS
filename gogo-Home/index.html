@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="firhed">
+            <input class="search" type="search" placeholder="Search...">
+        </div>
+        <nav>
+            <img src="/gogo-Home/img/logo.jpg" alt="Logo">
+            <div class="endhed">
+                <button class="darkMode">Dark</button>
+                <button class="lightMode">Light</button>
+                <p>Mr.Nurmuhamad</p>
+                <img src="/gogo-Home/img/icons8-user-30.png" alt="User Avatar" style="border: 4px solid black; border-radius: 50%;">
+                <button class="logout"><a href="/lock.html">Logout</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="thumb">
+        <h1 class="thum">Thumb list</h1>
+        <button class="btnAd"><img src="/img/icons8-add-user-50.png" alt=""></button>
+    </div>
+
+    <div class="sec">
+        <button class="cardMod"><img src="/gogo-Home/img/icons8-tasklist-64.png" alt="Task List"></button>
+        <button style="margin-left: 20px;" class="table"> <img src="/gogo-Home/img/icons8-to-do-50.png" alt="To-Do List"></button>
+        <select class="company">
+            <option value="all">All</option>
+            <option value="Ikea">Ikea</option>
+            <option value="Marcos">Marcos</option>
+            <option value="Caressa">Caressa</option>
+            <option value="Liddy">Liddy</option>
+        </select>
+        <select class="status">
+            <option value="all">All</option>
+            <option value="Done">Done</option>
+            <option value="Not Done">Not Done</option>
+        </select>
+    </div>
+
+    <div class="box"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Company</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        
+    </table>
+
+    <dialog class="diaAd">
+        <h2>Add New Item</h2>
+        <button class="btnclosAd">X</button>
+        <form class="formAd" action="">
+            <input type="text" name="name" placeholder="Product Name"><br>
+            <input type="text" name="img" placeholder="Image URL"><br>
+            <select name="SelAd" id="">
+                <option value="Ikea">Ikea</option>
+                <option value="Marcos">Marcos</option>
+                <option value="Caressa">Caressa</option>
+                <option value="Liddy">Liddy</option>
+            </select>
+            <input type="text" name="description" placeholder="Description"><br>
+            <input type="text" name="price" placeholder="Price"><br>
+            <select name="selstat" id="">
+                <option value="new">Processed</option>
+                <option value="used">On Hold</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+        <button class="btnclosAd">Close</button>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
